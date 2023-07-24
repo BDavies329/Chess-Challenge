@@ -68,7 +68,7 @@ namespace ChessChallenge.Chess
 
 
 
-        public Board(Board? source = null)
+        public Board(Board source = null)
         {
             if (source != null)
             {
@@ -266,12 +266,9 @@ namespace ChessChallenge.Chess
             UpdateSliderBitboards();
 
             // Pawn moves and captures reset the fifty move counter and clear 3-fold repetition history
-            if (movedPieceType == PieceHelper.Pawn || capturedPieceType != PieceHelper.None)
+            if (!inSearch && (movedPieceType == PieceHelper.Pawn || capturedPieceType != PieceHelper.None))
             {
-                if (!inSearch)
-                {
-                    RepetitionPositionHistory.Clear();
-                }
+                RepetitionPositionHistory.Clear();
                 newFiftyMoveCounter = 0;
             }
 
