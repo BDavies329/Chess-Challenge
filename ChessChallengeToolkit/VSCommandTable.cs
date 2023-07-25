@@ -20,9 +20,6 @@ namespace ChessChallengeToolkit
 
         public const string guidChessChallengeHelperPackageCmdSetString = "c766f2e3-5909-4c6e-9768-d8a46383a0fe";
         public static Guid guidChessChallengeHelperPackageCmdSet = new Guid(guidChessChallengeHelperPackageCmdSetString);
-
-        public const string guidImagesString = "6900b0a3-b89a-4035-a0a3-5f01a5d9b85d";
-        public static Guid guidImages = new Guid(guidImagesString);
     }
     /// <summary>
     /// Helper class that encapsulates all CommandIDs uses across VS Package.
@@ -31,11 +28,5 @@ namespace ChessChallengeToolkit
     {
         public const int MyCommand = 0x0100;
         public const int MyBotComplexityWindowCommandId = 0x0100;
-        public const int bishopIcon = 0x0001;
-        public const int bmpPic2 = 0x0002;
-        public const int bmpPicSearch = 0x0003;
-        public const int bmpPicX = 0x0004;
-        public const int bmpPicArrows = 0x0005;
-        public const int bmpPicStrikethrough = 0x0006;
     }
 }
