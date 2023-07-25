@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="ChessChallengeToolkit.41c530d6-ee86-48cf-95f0-686aecefdda5" Version="1.0" Language="en-US" Publisher="Company" />
-    <DisplayName>ChessChallengeToolkit</DisplayName>
-    <Description>Empty VSIX Project.</Description>
-    <Icon>Resources\Icon.png</Icon>
-    <PreviewImage>Resources\Icon.png</PreviewImage>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
-  </Installation>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
-  </Prerequisites>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-  </Assets>
+    <Metadata>
+        <Identity Id="ChessChallengeToolkit.41c530d6-ee86-48cf-95f0-686aecefdda5" Version="1.0" Language="en-US" Publisher="Bden" />
+        <DisplayName>ChessChallengeToolkit</DisplayName>
+        <Description xml:space="preserve">An extension to show Bot Brain Capacity for Sebastian Lague's Tiny Chess Bots
+https://github.com/SebLague/Chess-Challenge</Description>
+        <Icon>Resources\Icon.png</Icon>
+        <PreviewImage>Resources\Icon.png</PreviewImage>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
 </PackageManifest>
